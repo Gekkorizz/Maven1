@@ -1,13 +1,13 @@
 pipeline{
-  agents any
+  agent any
     tools{
       maven "Maven"
       jdk "JDK"
     }
     stages{
-      stage('Checkout'){
+      stage('checkout'){
         steps{
-          git 'https://github.com/Gekkorizz/Maven1'
+          git 'https://github.com/Gekkorizz/Maven1.git'
         }
       }
       stage('build'){
